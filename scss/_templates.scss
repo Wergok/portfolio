@@ -1,0 +1,27 @@
+%StyleTextH1 {
+    font-family: $mainFont;
+    font-weight: 500;
+    font-size: rem(48);
+    line-height: interest(79, 48);
+}
+
+%StyleTextH2 {
+    font-family: $mainFont;
+    font-size: rem(32);
+    font-weight: 500;
+    line-height: interest(38, 32);
+}
+
+%StyleText {
+    font-family: $mainFont;
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: interest(26, 16);
+}
+
+%StyleTextLabel {
+    font-family: $mainFont;
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: interest(23, 14);
+}

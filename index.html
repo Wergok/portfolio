@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:regular,500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.min.css" />
+        <title>Портофолио</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="container header__container">
+                    <nav class="menu">
+                        <a class="logo menu__logo">
+                            <img
+                                src="blocks/header/images/logo.svg"
+                                alt="логотип"
+                                class="logo__image"
+                            />
+                        </a>
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <button class="menu__button" data-path=".main-page">ГЛАВНАЯ</button>
+                            </li>
+                            <li class="menu__list-item">
+                                <button class="menu__button" data-path=".about">ОБ АВТОРЕ</button>
+                            </li>
+                            <li class="menu__list-item">
+                                <button class="menu__button" data-path=".works">РАБОТЫ</button>
+                            </li>
+                            <li class="menu__list-item">
+                                <button class="menu__button" data-path=".contacts">КОНТАКТЫ</button>
+                            </li>
+                        </ul>
+                        <button class="header__burger-button burger-button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </nav>
+                </div>
+            </header>
+
+            <main class="main">
+                <section class="main-page">
+                    <div class="main-page__container container">
+                        <div class="main-page__inner">
+                            <img
+                                src="blocks/main-page/images/laptop.svg"
+                                alt="ноутбук"
+                                class="main-page__image"
+                            />
+                            <div class="main-page__text-box">
+                                <h1 class="main-page__title title animation">
+                                    Вёрстка и создание сайтов
+                                </h1>
+                                <p class="main-page__text animation">
+                                    Создание адаптивных лендингов и простых
+                                    сайтов-визиток. Быстрая вёрстка страниц и
+                                    блоков
+                                </p>
+                                <button
+                                    class="main-page__button button animation"
+                                    type="button" \
+                                    data-path=".contacts"
+                                >
+                                    НАПИСАТЬ МНЕ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="about">
+                    <div class="about__container container">
+                        <h2 class="about__title title animation">Обо мне</h2>
+                        <p class="about__text animation">
+                            Меня зовут Ярослав. Я начинающий фрилансер, мой срок обучения состовляет год, поэтому стоимость услуг начинается от 100 рублей
+                        </p>
+                    </div>
+                </section>
+                <section class="skills">
+                    <div class="skills__container container">
+                        <div class="skills__inner">
+                            <h2 class="skills__title title animation">
+                                Мои навыки
+                            </h2>
+                            <ul class="skills__list">
+                                <li class="skills__item">
+                                    <h4 class="skills__item-title animation">
+                                        HTML&CSS
+                                    </h4>
+                                    <span class="skills__progress"></span>
+                                </li>
+                                <li class="skills__item">
+                                    <h4 class="skills__item-title animation">
+                                        JavaScript
+                                    </h4>
+                                    <span class="skills__progress"></span>
+                                </li>
+                                <li class="skills__item">
+                                    <h4 class="skills__item-title animation">
+                                        Figma
+                                    </h4>
+                                    <span class="skills__progress"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <img
+                            src="blocks/skills/images/person.jpg"
+                            alt="программист"
+                            class="skills__image"
+                        />
+                    </div>
+                </section>
+                <section class="works">
+                    <div class="works__container container">
+                        <h2 class="works__title title animation">Мои работы</h2>
+                        <ul class="works__list">
+                            <li class="works__list-item animation">
+                                <a
+                                    class="works__link"
+                                    href="https://cdekhome.by"
+                                >
+                                    <img
+                                        src="blocks/works/images/background.png"
+                                        alt="пример работы"
+                                        class="works__image"
+                                    />
+                                    <span></span>
+                                </a>
+                            </li>
+                            <li class="works__list-item animation">
+                                <a
+                                    class="works__link"
+                                    href="https://wergok.github.io/firstpr/index.html"
+                                >
+                                    <img
+                                        src="blocks/works/images/background.png"
+                                        alt="пример работы"
+                                        class="works__image"
+                                    />
+                                    <span></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="contacts">
+                    <div class="contacts__container container">
+                        <h2 class="contacts__title title animation">
+                            Хотите веб-сайт?
+                        </h2>
+                        <h3 class="contacts__subtitle animation">
+                            Оставьте свои данные и я свяжусь с вами в ближайшее
+                            время
+                        </h3>
+                        <form class="contacts__form">
+                            <div class="contacts__form-item">
+                                <label
+                                    for="formInputName"
+                                    class="contacts__label"
+                                ></label
+                                ><input
+                                    type="text"
+                                    required
+                                    id="formInputName"
+                                    placeholder="Ваше имя"
+                                    name="name"
+                                    class="contacts__input animation"
+                                />
+                            </div>
+                            <div class="contacts__form-item">
+                                <label
+                                    for="formInputEmail"
+                                    class="contacts__label"
+                                ></label
+                                ><input
+                                    type="email"
+                                    required
+                                    id="formInputEmail"
+                                    placeholder="Ваш e-mail"
+                                    name="email"
+                                    class="contacts__input email animation"
+                                />
+                            </div>
+                            <div class="contacts__form-item">
+                                <label
+                                    for="formInputMessage"
+                                    class="contacts__label"
+                                ></label
+                                ><textarea
+                                    name="text"
+                                    id="formInputMessage"
+                                    cols="50"
+                                    placeholder="Сообщение"
+                                    rows="10"
+                                    class="contacts__textarea animation"
+                                ></textarea>
+                            </div>
+                            <button class="contacts__button button animation">
+                                ОПРАВИТЬ
+                            </button>
+                        </form>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div class="footer__container container">
+                    <p class="footer__name">Шутович Александр</p>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link"
+                                ><img
+                                    src="blocks/footer/images/instagram.svg"
+                                    alt="соц сеть"
+                                    class="footer__image"
+                            /></a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link"
+                                ><img
+                                    src="blocks/footer/images/telegram.svg"
+                                    alt="соц сеть"
+                                    class="footer__image"
+                            /></a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+
+            <div class="burger">
+                <div class="container burger__container">
+                    <div class="burger-top burger__top">
+                        <a class="logo" href="#"
+                            ><img
+                                src="blocks/header/images/logo.svg"
+                                alt="логотип"
+                                class="logo__image"
+                            /> </a
+                        ><button class="burger-top__close burger-button">
+                            <span></span> <span></span>
+                        </button>
+                    </div>
+                    <div class="burger-body burger__body">
+                        <button class="burger-body__item" data-path=".main-page">
+                            ГЛАВНАЯ
+                            <img
+                                src="blocks/burger/images/arrow.svg"
+                                alt=""
+                                class="burger-body__arrow"
+                            />
+                        </button>
+                        <button class="burger-body__item" data-path=".about">
+                            ОБ АВТОРЕ
+                            <img
+                                src="blocks/burger/images/arrow.svg"
+                                alt=""
+                                class="burger-body__arrow"
+                            />
+                        </button>
+                        <button class="burger-body__item" data-path=".works">
+                            РАБОТЫ
+                            <img
+                                src="blocks/burger/images/arrow.svg"
+                                alt=""
+                                class="burger-body__arrow"
+                            />
+                        </button>
+                        <button class="burger-body__item" data-path=".contacts">
+                            КОНТАКТЫ
+                            <img
+                                src="blocks/burger/images/arrow.svg"
+                                alt=""
+                                class="burger-body__arrow"
+                            />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/normal_js/animations.js"></script>
+        <script src="js/normal_js/scroll.js"></script>
+        <script src="js/normal_js/validate.js"></script>
+        <script src="js/normal_js/burger.js"></script>
+    </body>
+</html>

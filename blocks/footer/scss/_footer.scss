@@ -1,0 +1,30 @@
+.footer {
+    background: $ColorBlue;
+    padding: 50px 0px 50px 0px;
+    color: $ColorWhite;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__name {
+        @extend %StyleText;
+    }
+
+    &__list {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__list-item {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+    }
+}

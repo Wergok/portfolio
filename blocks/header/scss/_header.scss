@@ -1,0 +1,44 @@
+.header {
+    background: $ColorBackgroundLightWhite;
+    padding: 50px 0px 50px 0px;
+
+    &__burger-button {
+        position: relative;
+        width: 30px;
+        height: 16px;
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 769px) {
+
+            & {
+                display: none;
+            }
+
+        }
+
+        & span {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: $ColorBlue;
+
+            &:nth-child(1) {
+                left: 0;
+                top: 0;
+            }
+
+            &:nth-child(2) {
+                left: 0;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+
+            &:nth-child(3) {
+                left: 0;
+                bottom: 0;
+            }
+        }
+    }
+}

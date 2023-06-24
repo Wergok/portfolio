@@ -1,0 +1,111 @@
+@import "_var.scss";
+@import "_mixin.scss";
+@import "_templates.scss";
+
+.container {
+    max-width: calc($widthContainer + 20px);
+    margin: 0 auto;
+    padding: 0px 10px 0px 10px;
+}
+
+.body--lock {
+    overflow: hidden;
+}
+
+.wrapper::after {
+    content: "";
+    background: rgba($ColorBlack, $alpha: 0.5) url("../blocks/contacts/images/loader.svg") center no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 3000;
+}
+
+.wrapper.loading-body::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+        display: flex;
+        gap: 42px;
+
+        @media (max-width: 769px) {
+
+            & {
+                display: none;
+            }
+
+        }
+    }
+
+    &__button {
+        text-transform: uppercase;
+    }
+
+    &__button {
+        @extend %StyleText;
+        color: $ColorBlack;
+        transition: color .5s;
+
+        @media (min-width: 769px) {
+
+            &:hover {
+                color: $ColorBlue;
+            }
+
+        }
+    }
+}
+
+.logo {
+
+    &__image {
+        width: 96px;
+        height: 50px;
+    }
+}
+
+.transition {
+    transition: all .9s;
+}
+
+.title {
+    @extend %StyleTextH2;
+    text-align: center;
+}
+
+.button {
+    padding: 25px 41px 25px 41px;
+    background: $ColorBlue;
+    color: $ColorWhite;
+    text-transform: uppercase;
+    transition: box-shadow .5s ease-in-out;
+    letter-spacing: 1.6px;
+
+    @media (min-width: 769px) {
+
+        &:hover {
+            box-shadow: $ColorBlack 5px 5px 15px;
+        }
+
+    }
+}
+
+@import "../blocks/header/scss/_header.scss";
+@import "../blocks/burger/scss/_burger.scss";
+@import "../blocks/main-page/scss/_main-page.scss";
+@import "../blocks/about/scss/_about.scss";
+@import "../blocks/skills/scss/_skills.scss";
+@import "../blocks/works/scss/_works.scss";
+@import "../blocks/contacts/scss/_contacts.scss";
+@import "../blocks/footer/scss/_footer.scss";

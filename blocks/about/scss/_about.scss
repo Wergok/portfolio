@@ -1,0 +1,32 @@
+.about {
+    padding: 100px 0px 0px 0px;
+
+    @media (max-width: 769px) {
+    
+        & {
+            padding: 60px 0px 0px 0px;
+        }
+    
+    }
+
+    @media (max-width: 426px) {
+    
+        & {
+            padding: 40px 0px 00px 0px;
+        }
+    
+    }
+
+    &__title {
+        @extend %StyleTextH2;
+        margin: 0px 0px 50px 0px;
+    }
+
+    &__text {
+        max-width: 600px;
+        @extend %StyleText;
+        color: $ColorGray;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
